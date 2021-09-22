@@ -22,6 +22,8 @@ class _NewTransactionState extends State<NewTransaction> {
       return;
     }
     widget.addNewTx(enteredName, enterdPrice);
+
+    Navigator.of(context).pop();
   }
 
   @override
